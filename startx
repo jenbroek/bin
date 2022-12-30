@@ -5,8 +5,8 @@ vt=vt${vt##*tty}
 
 d=0
 while test -e /tmp/.X$d-lock || test -S /tmp/.X11-unix/X$d; do
-    d=$((d + 1))
+	d=$((d + 1))
 done
 
 exec xinit -- $(command -v X) :$d $vt \
-    -keeptty -nolisten tcp -nolisten local
+	-keeptty -nolisten tcp -nolisten local

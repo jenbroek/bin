@@ -1,16 +1,16 @@
 #!/bin/sh
 
 if test "$1" -ge 0 2> /dev/null; then
-    amixer -q sset Master $1%
-    exit
+	amixer -q sset Master $1%
+	exit
 fi
 
 case $1 in
-    u) amixer -q sset Master 2%+ ;;
-    d) amixer -q sset Master 2%- ;;
-    t) amixer -q sset Master toggle ;;
-    *)
-        echo "usage: ${0##*/} (LVL|u|d|t)" >&2
-        exit 1
-        ;;
+	u) amixer -q sset Master 2%+ ;;
+	d) amixer -q sset Master 2%- ;;
+	t) amixer -q sset Master toggle ;;
+	*)
+		echo "usage: ${0##*/} (LVL|u|d|t)" >&2
+		exit 1
+		;;
 esac
