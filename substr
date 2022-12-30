@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 if test $# -lt 3 || test "$3" -lt 0 2> /dev/null; then
 	echo "usage: ${0##*/} STRING DELIM INDEX" >&2

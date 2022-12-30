@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 usage() {
 	echo "usage: ${0##*/} X Y IMG [-ulrd POINTER_OFFSET]" >&2

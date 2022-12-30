@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 if test "$1" -ge 0 2> /dev/null; then
 	amixer -q sset Master $1%

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 if ! pgrep X > /dev/null; then
 	echo "${0##*/}: X isn't running"
